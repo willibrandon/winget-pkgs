@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.9.0.schema.json
+PackageIdentifier: willibrandon.dotsider-mcp
+PackageVersion: 0.26.1
+Platform:
+  - Windows.Desktop
+MinimumOSVersion: 10.0.18362.0
+InstallerType: msi
+Scope: machine
+InstallModes:
+  - interactive
+  - silent
+  - silentWithProgress
+UpgradeBehavior: install
+Installers:
+  - Architecture: x64
+    InstallerUrl: https://github.com/willibrandon/dotsider/releases/download/v0.26.1/dotsider-mcp-win-x64.msi
+    InstallerSha256: 032AE5E5D7C3C9B92792D82588469C2BA13E10DB4820308A0293B80B217ED526
+    ProductCode: "{2128926D-6F3D-4F05-9C70-3643C72ACA21}"
+  - Architecture: arm64
+    InstallerUrl: https://github.com/willibrandon/dotsider/releases/download/v0.26.1/dotsider-mcp-win-arm64.msi
+    InstallerSha256: 45DA4CA29C20313577BBF71D6B23EC259E7CED819350CA14D5DB692C033DA530
+    ProductCode: "{934F9316-A93A-49B3-B3C4-FBAD946CC834}"
+ManifestType: installer
+ManifestVersion: 1.9.0
